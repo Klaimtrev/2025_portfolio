@@ -116,6 +116,16 @@ const EarthCanvas = () => {
           intensity={2}
           castShadow
         />
+        <spotLight
+          position={[10, 50, 10]}
+          angle={0.3}
+          penumbra={1}
+          intensity={0}
+        />
+        <pointLight intensity={0} 
+        position={[10, 10, -30]}/>
+        <pointLight intensity={2} 
+        position={[-10, 500, 0]}/>
         <TelephoneMan />
         <Telephone />
         <ShadowCatcher />

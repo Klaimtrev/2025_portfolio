@@ -20,7 +20,7 @@ const ShadowCatcher = ({ isMobile }) => {
 
 // Headset Component
 const Headset = ({ isMobile, mousePos }) => {
-  const { scene, animations } = useGLTF("./VR_HeadsetExport1/Headset1.gltf");
+  const { scene, animations } = useGLTF("./VR_headset_fix/Headset1.gltf");
   const groupRef = useRef();
   const mixerRef = useRef(null);
   const actionRef = useRef(null);
@@ -77,8 +77,8 @@ const Headset = ({ isMobile, mousePos }) => {
       <primitive
         object={scene}
         scale={isMobile ? 2.0 : 4} // adjust scale if needed
-        position={isMobile ? [0, 0, 0] : [-2.2, -4.1, -.4]} // adjust position as required
-        rotation={[0.0, Math.PI*0.9 , 0.0]}
+        position={isMobile ? [0, 0.5, -2.5] : [0, -4.2, -3]}
+        rotation={[-0.0, (-Math.PI*1.25), -0.]}
         frustumCulled={false}
         castShadow
       />
@@ -88,7 +88,7 @@ const Headset = ({ isMobile, mousePos }) => {
 
 // Computers Component (Existing Model)
 const Computers = ({ isMobile, mousePos }) => {
-  const { scene, animations } = useGLTF("./5thTryAnimation/WoodManequin5.gltf");
+  const { scene, animations } = useGLTF("./6thAnimation/WoodManequin5.gltf");
 
   useEffect(() => {
     scene.traverse((child) => {
@@ -160,7 +160,10 @@ const Computers = ({ isMobile, mousePos }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={1} 
+      position={[-5, 0, -10]}/>
+      <pointLight intensity={5} 
+      position={[-0, 0, 10]}/>
       <primitive
         object={scene}
         scale={isMobile ? 2.0 : 4}
