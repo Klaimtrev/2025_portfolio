@@ -23,12 +23,15 @@ import hfs_cancer from "./HFS_Cancer.png";
 import handtrackingphysics from "./HandTrackingPhysics.png";
 import mini_golf from "./Mini_golfVR.png";
 import azimuth from "./AzimuthVR.png";
+import ai_puzzle_solver from "./AI_puzzleSolver.png";
+import videoAnalysis from "./videoanalysis.png";
 
 import cv from "./Resume_DiegoM.pdf";
 
 import hfs_video from "./videos/hfs_video.mp4";
 import physicshandtracking_video from "./videos/physicsHandTracking.mp4";
 import azimuth_video from "./videos/Azimuth.mp4";
+import ai_puzzle_solver_video from "./videos/ai_puzzle_solver.mp4";
 
 
 
@@ -56,4 +59,7 @@ export {
   physicshandtracking_video,
   handtrackingphysics,
   azimuth_video,
+  ai_puzzle_solver,
+  ai_puzzle_solver_video,
+  videoAnalysis,
 };

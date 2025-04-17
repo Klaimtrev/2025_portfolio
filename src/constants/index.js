@@ -16,6 +16,9 @@ import {
   handtrackingphysics,
   physicshandtracking_video,
   azimuth_video,
+  ai_puzzle_solver,
+  ai_puzzle_solver_video,
+  videoAnalysis,
 } from "../assets";
           
 
@@ -165,20 +168,11 @@ const projects = [
     description:
       "Use of heuristic feature selection methods applied to cancer classification using machine learning.",
     longer_description:
-      "Use of heuristic feature selection methods applied to cancer classification using machine learning. The goal is to improve classification performance by selecting the most relevant features from gene expression data. The repository contains implementations of multiple feature selection techniques and evaluates their impact on different machine learning models.",
+      "The goal is to improve classification performance by selecting the most relevant features from gene expression data. The repository contains implementations of multiple feature selection techniques and evaluates their impact on different machine learning models.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Python 🐍", color: "blue-text-gradient" },
+      { name: "Machine Learning 🤖", color: "green-text-gradient" },
+      { name: "MATLAB 📊", color: "pink-text-gradient" },
     ],
     image: hfs_cancer,
     video: hfs_video,
@@ -187,46 +181,28 @@ const projects = [
   {
     name: "Hand Tracking Physics",
     description:
-      "Unity Project that uses hand tracking for physics interactions including a a manufacturing robot. ",
+      "Unity project using hand tracking for physical interactions with a manufacturing robot.",
     longer_description:
-      "Use of heuristic feature selection methods applied to cancer classification using machine learning. The goal is to improve classification performance by selecting the most relevant features from gene expression data. The repository contains implementations of multiple feature selection techniques and evaluates their impact on different machine learning models.",
+      "Built in Unity using hand tracking APIs to enable real-time interactions in a VR environment. Emphasis on physics-based interactions and immersive realism.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Unity 🕹️", color: "blue-text-gradient" },
+      { name: "C# 💻", color: "green-text-gradient" },
+      { name: "VR 🥽", color: "pink-text-gradient" },
     ],
     image: handtrackingphysics,
     video: physicshandtracking_video,
-    source_code_link: "https://github.com/Klaimtrev/HFS-Cancer",
+    source_code_link: "https://github.com/Klaimtrev/HFS-Cancer", // You might want to update this link
   },
   {
     name: "Azimuth VR Project",
     description:
-      "Developed a VR bedroom environment for a prototype targeting Meta Quest 2, as part of the NSAC 2022 Case Study, Optimized performance by baking lighting data into textures, ensuring smooth execution on standalone VR hardware",
+      "Developed a VR bedroom prototype for Meta Quest 2, optimizing performance through light baking.",
     longer_description:
-      "Bedroom model for a VR Prototype in Unity. Most models are from Blender Kit and Poly Haven. I made the rest of the models and modified some of the ones downloaded from the web. The project was made for the NSAC 2022 Case Study: Meta Quest 2. The light data is baked into the textures so that the performance is optimized to run using the standalone headset.",
+      "Created for the NSAC 2022 case study. Modeled environment using Blender and Unity, and optimized lighting for standalone headset performance.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Unity 🕹️", color: "blue-text-gradient" },
+      { name: "Blender 🍑", color: "green-text-gradient" },
+      { name: "Light Baking 💡", color: "pink-text-gradient" },
     ],
     image: azimuth,
     video: azimuth_video,
@@ -235,74 +211,48 @@ const projects = [
   {
     name: "Virtual Reality Golf Game",
     description:
-      "Adapted an existing golf game from WKU XR Lab into an immersive VR experience, following Meta’s development guidelines.",
+      "Adapted an existing golf game into a VR experience using Meta Quest, reaching 15k+ players.",
     longer_description:
-      "Adapted an existing golf game from WKU XR Lab into an immersive VR experience, following Meta’s development guidelines. Optimized interactions, physics, and user experience for VR gameplay. Successfully published on the Meta Store, achieving over 15,000 players.",
+      "Enhanced interactions and physics for VR gameplay following Meta development guidelines. Published on Meta Store through WKU XR Lab.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Python",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "Unity 🕹️", color: "blue-text-gradient" },
+      { name: "VR 🥽", color: "green-text-gradient" },
+      { name: "Meta Quest 🎯", color: "pink-text-gradient" },
     ],
     image: mini_golf,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.meta.com/experiences/mini-golf-game/5738234716190098/?srsltid=AfmBOorxwFt7x2q8iR7Fm61_vZnpV7mPmQd11Sl5GoxFO2p5tEOF8xq7",
   },
   {
-    name: "A* search algorithm in puzzle games",
+    name: "A* Search Algorithm in Puzzle Games",
     description:
-      "Three puzzle games were developed using java and were ported to android and HTML 5.",
+      "Developed three puzzle games with AI solvers, deployed on Android and web.",
     longer_description:
-      "I developed 3 puzzle mini games using java and were ported to android and HTML 5. Android studio was used to deploy the games on android; and for HTML5, I used CSS and JavaScript. For the last part of the project, it was required to create basic artificial intelligence that searches for the easiest path to win the game",
+      "A JavaFX-based project featuring four small games alongside AI solvers (BFS, DFS, A*) for solving in-game challenges. This is project implemented in Java using NetBeans. It includes: Problem Information: Displays the problem's name, introduction, and current state. State Information: Shows the current state and the goal state of the puzzle.Search Type Selection: Choose between BFS or DFS search algorithms for solving the puzzle. A Solver*: Option to solve the puzzle using the A* search algorithm. Statistics: Displays the statistics of the AI search algorithms.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Java ☕", color: "blue-text-gradient" },
+      { name: "Android 📱", color: "green-text-gradient" },
+      { name: "A* Algorithm ⭐", color: "pink-text-gradient" },
     ],
-    image: azimuth,
-    video: hfs_video,
-    source_code_link: "https://github.com/",
+    image: ai_puzzle_solver,
+    video: ai_puzzle_solver_video,
+    source_code_link: "https://github.com/Klaimtrev/AI-PuzzleSolvers",
   },
   {
     name: "AI-Video-DataMiner",
     description:
-      "Multithreaded pipeline for AI-driven video analysis",
+      "Multithreaded pipeline for AI-driven video analysis and sentiment extraction.",
     longer_description:
-      "Multithreaded pipeline for AI-driven video analysis, automating tasks such as downloading videos, extracting audio, transcribing speech, performing sentiment analysis, translating text, and detecting emotions",
+      "Automates tasks like video download, audio transcription, sentiment/emotion detection, and translation. Developed for scalable processing of large video datasets.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "Python 🐍", color: "blue-text-gradient" },
+      { name: "NLP 🗣️", color: "green-text-gradient" },
+      { name: "Multithreading 🧵", color: "pink-text-gradient" },
     ],
-    image: azimuth,
-    video: hfs_video,
-    source_code_link: "https://github.com/",
+    image: videoAnalysis,
+    //no video yet
+    source_code_link: "https://github.com/Klaimtrev/Video_Analysis",
   },
 ];
+
 
 export { services, technologies, experiences, projects };
