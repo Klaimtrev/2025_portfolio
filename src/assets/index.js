@@ -26,7 +26,7 @@ import azimuth from "./AzimuthVR.png";
 import ai_puzzle_solver from "./AI_puzzleSolver.png";
 import videoAnalysis from "./videoanalysis.png";
 
-import cv from "./Resume_DiegoM.pdf";
+import cv from "./DiegoM_CV.pdf";
 
 import hfs_video from "./videos/hfs_video.mp4";
 import physicshandtracking_video from "./videos/physicsHandTracking.mp4";

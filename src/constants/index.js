@@ -74,6 +74,10 @@ const technologies = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
   },
   {
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+  },
+  {
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
   },
@@ -98,12 +102,20 @@ const technologies = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
   },
   {
-    name: "SQLite",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
+    name: "Blender",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg",
   },
   {
-    name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    name: "Maya",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maya/maya-plain.svg",
+  },
+  {
+    name: "Photoshop",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg",
+  },
+  {
+    name: "SQLite",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg",
   },
   {
     name: "MongoDB",
@@ -124,6 +136,10 @@ const technologies = [
   {
     name: "git",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    name: "Github",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
   },
   {
     name: "docker",
@@ -191,7 +207,7 @@ const projects = [
     ],
     image: handtrackingphysics,
     video: physicshandtracking_video,
-    source_code_link: "https://github.com/Klaimtrev/HFS-Cancer", // You might want to update this link
+    source_code_link: "https://github.com/WKUXRLab/WKU-Hand-Tracking_Research",
   },
   {
     name: "Azimuth VR Project",
